@@ -81,6 +81,19 @@ h6 {
   overflow-y: auto;
 }
 
+.typing-text {
+  overflow: hidden; /* hides the text as it's being typed */
+  border-right: 3px solid #000; /* creates a blinking cursor effect */
+  white-space: nowrap; /* prevents line breaks */
+  animation: typing 2s steps(30) infinite;
+  
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
 #header * {
   transition: ease-in-out 0.3s;
 }
